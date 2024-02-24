@@ -5,17 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Abstract
+namespace Business.Abstract;
+
+public interface IApplicantService
 {
-    public interface IApplicantService
-    {
-        void ApplyForMask(Person person);
+    void ApplyForMask(Person person);
 
 
-        List<Person> GetList();
+    List<Person> GetList();
 
 
-        bool CheckPerson(Person person);
-        
-    }
+    bool CheckPerson(Person person);
+    
 }
